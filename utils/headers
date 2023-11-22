@@ -1,0 +1,33 @@
+GET /shop/ab/tests/script-cookie?ui=DESKTOP&tg=none HTTP/1.1
+Host: kaspi.kz
+Cookie: layout=d
+Sec-Ch-Ua: 
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.199 Safari/537.36
+Sec-Ch-Ua-Platform: ""
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: script
+Referer: https://kaspi.kz/shop/search/?text=sony%20wh-1000xm
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+
+
+GET /yml/product-view/pl/filters?text=sony%20wh-1000xm&page=0&all=false&fl=true&ui=d&q=%3AavailableInZones%3AMagnum_ZONE1&i=-1&c=750000000 HTTP/1.1
+Host: kaspi.kz
+Sec-Ch-Ua: 
+Accept: application/json, text/*
+X-Ks-City: 750000000
+Sec-Ch-Ua-Mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.5735.199 Safari/537.36
+Sec-Ch-Ua-Platform: ""
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://kaspi.kz/shop/search/?text=sony%20wh-1000xm
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: close
+

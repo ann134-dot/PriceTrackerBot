@@ -1,6 +1,0 @@
-asyncio
-aiogram 
-apscheduler
-requests
-flask
-gunicorn
