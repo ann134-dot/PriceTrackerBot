@@ -1,5 +1,5 @@
 from aiogram import Bot, Dispatcher
-import asyncio, asyncpg
+import asyncio, aiomysql
 from middleware.db_session_middleware import DbSessionMiddleware
 import logging
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
@@ -46,7 +46,16 @@ async def wrapper_sch_db(pool):
 
 
 async def start():
-    pool = await asyncpg.create_pool(os.environ.get('DB_CONNECT'))
+    db_params = {
+        "host": "hakkio4332.mysql.pythonanywhere-services.com",
+        "port": 3306,
+        "user": "hakkio4332",
+        "password": os.environ.get("DB_PASS"),
+        "db": "hakkio4332$default",
+        "autocommit": True,
+    }
+
+    pool = await aiomysql.create_pool(**db_params)
     dp.update.middleware.register(DbSessionMiddleware(pool))
     
     # await wrapper_sch_db(pool)

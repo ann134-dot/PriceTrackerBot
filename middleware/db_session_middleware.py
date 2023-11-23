@@ -2,13 +2,13 @@ from aiogram import BaseMiddleware
 from aiogram.types import TelegramObject
 from typing import Dict, Any, Callable, Awaitable
 
-import asyncpg
+import aiomysql
 from utils.dbconnect import RequestDB
 
 
 
 class DbSessionMiddleware(BaseMiddleware):
-    def __init__(self, connector: asyncpg.pool.Pool):
+    def __init__(self, connector: aiomysql.pool.Pool):
         super().__init__()
         self.connector = connector
 
