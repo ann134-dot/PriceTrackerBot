@@ -1,4 +1,6 @@
 env/
 .vscode/
 .env
+repl_main.py
+temp.py
 *cache*
